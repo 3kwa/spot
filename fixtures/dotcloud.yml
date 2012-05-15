@@ -1,0 +1,6 @@
+www:
+    type: python
+cache:
+    type: redis
+mongo:
+    type: mongodb
