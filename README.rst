@@ -62,7 +62,7 @@ the server you can use out of the box::
 Next?
 =====
 
-At this stage only the Redis and MongoDB services are managed. I will had more
+At this stage only the Redis_ and MongoDB_ services are managed. I will had more
 as I *require* them ... or you can contribute and submit new services definition
 via pull request ;)
 
@@ -75,3 +75,4 @@ via pull request ;)
 .. _environment file: http://docs.dotcloud.com/guides/environment/
 .. _redis: http://pypi.python.org/pypi/redis
 .. _hiredis: http://pypi.python.org/pypi/hiredis
+.. _mongodb: http://www.mongodb.org/
