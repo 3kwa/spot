@@ -37,6 +37,7 @@ class Mongodb(Service):
 class Dotcloud(object):
     """ Developement/Dotcloud service parameters 'abstraction' layer
 
+    >>> Dotcloud.dotcloud_yaml = 'fixtures/dotcloud.yml'
     >>> dotcloud = Dotcloud()
     >>> dotcloud.cache.port
     6379
