@@ -62,7 +62,7 @@ the server you can use out of the box::
 Next?
 =====
 
-At this stage only the Redis_ and MongoDB_ services are managed. I will had more
+At this stage only the Redis_ and MongoDB_ services are managed. I will add more
 as I *require* them ... or you can contribute and submit new services definition
 via pull request ;)
 
