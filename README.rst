@@ -11,7 +11,7 @@ are specified in the `build file`_.
 
 Locally one very rarely bother changing the parameters of the services from
 their defaults settings but on DotCloud_ your application must read the
-`environement file`_.
+`environment file`_.
 
 Hence you end up with a fair amount of boilerplate code in your application
 which figures out wether it is running locally or on DotCloud_ and instantiates
@@ -42,9 +42,19 @@ services::
     >>> isinstance(dotcloud.cache, spot.Redis)
     True
 
+When running locally::
+
+    >>> dotcloud.cache.host
+    u'localhost'
+
+But on DotCloud::
+
+    >>> dotcloud.cache.host
+    u'SOMETHING.dotcloud.com'
+
 If you have installed the packages allowing Python to handle the services e.g.
 redis_ (and hiredis_), the spot.Dotcloud instance also expose a connection to
-the server you can use out of the box.
+the server you can use out of the box::
 
     >>> type(dotcloud.cache.server)
     <class 'redis.client.StrictRedis'>
@@ -53,7 +63,7 @@ Next?
 =====
 
 At this stage only the Redis and MongoDB services are managed. I will had more
-as I require them ... or you can contribute and submit new services definition
+as I *require* them ... or you can contribute and submit new services definition
 via pull request ;)
 
 
