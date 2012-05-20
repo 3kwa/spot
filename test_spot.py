@@ -1,7 +1,9 @@
 import unittest
+import doctest
 import os
 
 import spot
+
 
 class TestSpot(unittest.TestCase):
 
@@ -30,6 +32,11 @@ class TestSpot(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         spot.Dotcloud.dotcloud_yaml = cls.dotcloud_yaml
+
+def load_tests(loader, tests, ignore):
+    tests.addTests(doctest.DocTestSuite(spot))
+    return tests
+
 
 if __name__ == '__main__':
     unittest.main()
