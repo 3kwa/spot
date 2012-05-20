@@ -7,7 +7,7 @@ Why?
 
 When working with DotCloud_ you will more than likely have a developement
 environment locally that offers the services your application requires which
-are specified in the build file.
+are specified in the `build file`_.
 
 Locally one very rarely bother changing the default parameter of the services
 from their defaults settings but on DotCloud _your application must read the
@@ -42,4 +42,7 @@ services::
 
 
 .. _DotCloud: http://dotcloud.com
+.. _redis: http://redis.io
+.. _python: http://python.org
+.. _build file: http://docs.dotcloud.com/guides/build-file/
 
